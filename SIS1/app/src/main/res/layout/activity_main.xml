@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:rotationX="0"
+    android:background="@drawable/back2"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/realtime"
+        android:layout_width="95dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="46dp"
+        android:text="03:09"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/calendarView"
+        android:layout_width="60dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="12dp"
+        android:text="Almaty"
+        android:textColor="@color/white"
+        android:gravity="right"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="130dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="46dp"
+        android:layout_marginEnd="12dp"
+        android:text="21 September, 2025"
+        android:textColor="@color/white"
+        android:gravity="right"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/Quran"
+        android:layout_width="270dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="244dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/linear"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/Quran"
+            android:scaleType="centerCrop"
+            android:background="@drawable/rounded_bg1"
+            android:clipToOutline="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11dp"
+            android:layout_marginLeft="15dp"
+            android:text="Quran"
+            android:textColor="@android:color/white"
+            android:textSize="17dp"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/books"
+        android:layout_width="270dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/linear"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Quran" >
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/books"
+            android:scaleType="centerCrop"
+            android:background="@drawable/rounded_bg1"
+            android:clipToOutline="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11dp"
+            android:layout_marginLeft="15dp"
+            android:text="Books"
+            android:textColor="@android:color/white"
+            android:textSize="17dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/khadis"
+        android:layout_width="270dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/linear"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/books" >
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/khadith"
+            android:scaleType="centerCrop"
+            android:background="@drawable/rounded_bg1"
+            android:clipToOutline="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11dp"
+            android:layout_marginLeft="15dp"
+            android:text="Khadith"
+            android:textColor="@android:color/white"
+            android:textSize="17dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/dua"
+        android:layout_width="270dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/linear"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/khadis" >
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/dua"
+            android:scaleType="centerCrop"
+            android:background="@drawable/rounded_bg1"
+            android:clipToOutline="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11dp"
+            android:layout_marginLeft="15dp"
+            android:text="Dua"
+            android:textColor="@android:color/white"
+            android:textSize="17dp"/>
+        </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/zikr"
+        android:layout_width="270dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/linear"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dua" >
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/zikr"
+            android:scaleType="centerCrop"
+            android:background="@drawable/rounded_bg1"
+            android:clipToOutline="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11dp"
+            android:layout_marginLeft="15dp"
+            android:text="Zikr"
+            android:textColor="@android:color/white"
+            android:textSize="17dp"/>
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/compas"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/compas"
+        android:scaleType="centerCrop"
+        android:background="@drawable/rounded_bg1"
+        android:clipToOutline="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageButton
+        android:id="@+id/settings"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/set"
+        android:scaleType="centerCrop"
+        android:background="@drawable/rounded_bg1"
+        android:clipToOutline="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+<LinearLayout
+    android:layout_width="95dp"
+    android:layout_height="330dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="237dp"
+    android:orientation="vertical"
+    android:background="@drawable/linear"
+
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    >
+
+    <TextView
+        android:id="@+id/fadjr"
+        android:layout_width="95dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:text="Fadjr\n4:12"
+        android:textColor="@color/white"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/sun"
+        android:layout_width="95dp"
+        android:layout_height="40dp"
+        android:text="Sun\n5:22"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+      />
+
+    <TextView
+        android:id="@+id/zuhr"
+        android:layout_width="95dp"
+        android:layout_height="40dp"
+        android:text="Zukhr\n11:53"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        />
+
+    <TextView
+        android:id="@+id/asr"
+        android:layout_width="95dp"
+        android:layout_height="40dp"
+        android:text="Asr\n16:12"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        />
+
+    <TextView
+        android:id="@+id/magrib"
+        android:layout_width="95dp"
+        android:layout_height="40dp"
+        android:text="Magrib\n18:02"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        />
+
+    <TextView
+        android:id="@+id/isha"
+        android:layout_width="75dp"
+        android:layout_height="40dp"
+        android:text="Isha\n19:22"
+        android:background="@drawable/rounded_bg"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="10dp"/>
+</LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="26dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/icon"
+        android:src="@drawable/set"
+        android:scaleType="centerCrop"
+        android:background="@drawable/rounded_bg1"
+        android:clipToOutline="true"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="100dp"
+        android:layout_height="16dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginStart="80dp"
+        android:text="Next: Fadjr"
+        android:textColor="@color/white"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.941" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
